@@ -17,22 +17,37 @@ function run(event) {
     }
 
     let n = parseFloat(integer)
+    let nf = n
+    let c = 0
+    let done = false
     
-    for (let j = 0; j < clean_program.length; j++) {
-        let c = 0
-        while (Number.isInteger(n * clean_program[j])){
-            n = n * clean_program[j]
-            console.log(n)
-            c++
+    while (true) {
 
-            if (c >= 100) {
-                console.log("out of time!")
+        for (let j = 0; j < clean_program.length; j++) {
+            if (Number.isInteger(nf * clean_program[j])) {
+                nf = nf * clean_program[j]
                 break
             }
+            if (j >= clean_program.length - 1) {
+                done = true
+            }
+        }
+
+        if (done) {
+            break
+        }
+
+        n = nf
+        console.log(n)
+        c++
+        if (c >= 100) {
+            console.log("out of time!")
+            break
         }
     }
-    
+
     console.log(n)
+    console.log("done!")
 }
 
 
