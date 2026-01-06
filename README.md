@@ -1,6 +1,7 @@
-# jacksrevenge.github.io
+# Fractran intepreter
 
-This is just a test for github pages.
-Right now you can play rock paper scissors
+I'm using my github page to run a fractran intepreter.
+
+What is fractran? It's an esoteric programming language by John Conway
 
 https://jacksrevenge.github.io/ <-- here link
