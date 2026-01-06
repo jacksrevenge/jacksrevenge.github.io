@@ -7,9 +7,10 @@ function run(event) {
 
     const program = document.getElementById("program").value
     const integer = parseInt(document.getElementById("integer").value)
+    const final = document.getElementById("final_out")
+    const sequence_n = document.getElementById("sequence_out")
 
     const split_program = program.split(",")
-
     const clean_program = []
 
     for (let i = 0; i < split_program.length; i++) {
@@ -20,6 +21,7 @@ function run(event) {
     let nf = n
     let c = 0
     let done = false
+    const sequence = []
     
     while (true) {
 
@@ -38,7 +40,7 @@ function run(event) {
         }
 
         n = nf
-        console.log(n)
+        sequence.push(n)
         c++
         if (c >= 100) {
             console.log("out of time!")
@@ -46,8 +48,10 @@ function run(event) {
         }
     }
 
-    console.log(n)
     console.log("done!")
+
+    final.innerHTML = n.toString()
+    sequence_n.innerHTML = sequence.toString()
 }
 
 

@@ -11,11 +11,12 @@
 
     <form action="">
         <p>
-            <label for="program">Type your program here</label><br/>
-            <input type="" name="program_input" id="program" autocomplete="off">
+            <label for="program">Type your program here (a/b,c/d,...)</label><br/>
+            <input type="" name="program_input" id="program" autocomplete="off", size="100">
         </p>
 
         <p>
+            <label for="program">Set your inital n here</label><br/>
             <input type="" name="integer_input" id="integer" autocomplete="off">
         </p>
 
@@ -23,7 +24,16 @@
             <button type="submit">run</button>
         </p>
     </form>
-    
+
+    <p id="final">
+        <label for="final">Result</label>
+        <p for="final" id="final_out"></p>
+    </p>
+
+    <p id="sequence">
+        <label for="sequence">Sequence</label>
+        <p for="sequence" id="sequence_out"></p>
+    </p>
 </body>
 <script src="./js/interpreter.js"></script>
 </html>
