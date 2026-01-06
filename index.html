@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rock paper scissors</title>
+    <title>Fractran Interpreter</title>
 </head>
 <body>
-    <h1>rock paper scissors</h1>
-    <p id="score">score: 0</p>
+    <h1>Fractran Interpreter</h1>
 
     <form action="">
-        <label for="move">what's your move?</label><br/>
-        <input type="text" name="move" id="move" autocomplete="off"><br/>
-        <input type="submit" value="let's go!">
+        <p>
+            <label for="program">Type your program here (a/b,c/d,...)</label><br/>
+            <input type="" name="program_input" id="program" autocomplete="off", size="100">
+        </p>
+
+        <p>
+            <label for="program">Set your inital n here</label><br/>
+            <input type="" name="integer_input" id="integer" autocomplete="off">
+        </p>
+
+        <p class="button">
+            <button type="submit">run</button>
+        </p>
     </form>
-    <br/>
-    <p>bot says:</p>
-    <p id="computerOut">...</p>
+
+    <p id="final">
+        <label for="final">Result</label>
+        <p for="final" id="final_out"></p>
+    </p>
+
+    <p id="sequence">
+        <label for="sequence">Sequence</label>
+        <p for="sequence" id="sequence_out"></p>
+    </p>
 </body>
-<script src="./js/rock-paper-scissors.js"></script>
+<script src="./js/interpreter.js"></script>
 </html>
